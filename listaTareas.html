@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <style>
+        body {
+            background-color: rgb(214, 244, 244);
+            color: rgb(237, 89, 30);
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .lista-tareas {
+            margin-top: 20px;
+            width: 300px;
+            display: flex;
+        }
+        .tarea {
+            max-width:  400px;
+            padding: 20px;
+            background-color: #ce7777;
+            padding: 10px;
+            margin-bottom: 5px;
+            text-align: center;
+            border: 1px solid burlywood;
+            border-radius: 10px;
+        }
+        button {
+            margin-left: 10px;
+        }
+        input {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mis tareas</h1>
+
+    <input type="text" id="entradaTarea" placeholder="Escribe aqui">
+    <button onclick="añadirTarea()">Añadir Tarea</button>
+
+    <div class="lista-tareas" id="listaTareas">
+    </div>
+
+    <script src="listaTareas1.js"></script>
+</body>
+</html>
